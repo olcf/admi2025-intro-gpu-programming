@@ -6,7 +6,7 @@
 #SBATCH -t 10
 #SBATCH -p batch
 #SBATCH -o %x-%j.out
-#SBATCH --reservation=tapia2024
+#SBATCH --reservation=admi
 
 OMP_NUM_THREADS=8 srun -n1 -c8 --gpus=1 ./average_array_elements
 
