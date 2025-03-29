@@ -6,7 +6,7 @@
 #SBATCH -t 10
 #SBATCH -p batch
 #SBATCH -o %x-%j.out
-# #SBATCH --reservation=tapia2024
+# #SBATCH --reservation=admi
 
 srun -n1 -c1 --gpus=1 ./vector_mult
 
